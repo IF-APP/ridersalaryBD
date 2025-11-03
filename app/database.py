@@ -7,7 +7,7 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
-DATABASE_URL = os.getenv("DATABASE_URL", "postgresql+psycopg2://postgres:2672@localhost/rider_salary_db")
+DATABASE_URL = os.getenv("DATABASE_URL", "postgresql://riderapp_db_user:nyQiOuI8KGN3SljmvfFMHwIUGJjumwcm@dpg-d40q97ruibrs73cmdts0-a.singapore-postgres.render.com/riderapp_db")
 
 engine = create_engine(DATABASE_URL)
 SessionLocal = sessionmaker(autocommit=False, autoflush=False, bind=engine)
